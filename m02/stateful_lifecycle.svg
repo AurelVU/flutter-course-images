@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 460" font-family="-apple-system,Segoe UI,Roboto,sans-serif">
+  <style>
+    .stage{fill:#e8f5e9;stroke:#2e7d32;stroke-width:2}
+    .build{fill:#fff3e0;stroke:#ef6c00;stroke-width:2}
+    .dispose{fill:#ffebee;stroke:#c62828;stroke-width:2}
+    .label{font-size:14px;fill:#102a43;text-anchor:middle;font-weight:600}
+    .desc{font-size:11px;fill:#486581;text-anchor:middle}
+    .arr{stroke:#455a64;stroke-width:2;fill:none;marker-end:url(#a)}
+    .title{font-size:18px;font-weight:600;fill:#102a43;text-anchor:middle}
+  </style>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#455a64"/>
+    </marker>
+  </defs>
+  <text class="title" x="410" y="28">Жизненный цикл StatefulWidget</text>
+
+  <rect class="stage" x="40" y="80" width="140" height="60" rx="8"/>
+  <text class="label" x="110" y="110">createState()</text>
+  <text class="desc" x="110" y="128">Создаём State</text>
+
+  <rect class="stage" x="230" y="80" width="140" height="60" rx="8"/>
+  <text class="label" x="300" y="110">initState()</text>
+  <text class="desc" x="300" y="128">Подписки, контроллеры</text>
+
+  <rect class="stage" x="420" y="80" width="180" height="60" rx="8"/>
+  <text class="label" x="510" y="110">didChangeDependencies()</text>
+  <text class="desc" x="510" y="128">InheritedWidget изменился</text>
+
+  <rect class="build" x="650" y="80" width="130" height="60" rx="8"/>
+  <text class="label" x="715" y="110">build()</text>
+  <text class="desc" x="715" y="128">Возвращаем UI</text>
+
+  <line class="arr" x1="180" y1="110" x2="230" y2="110"/>
+  <line class="arr" x1="370" y1="110" x2="420" y2="110"/>
+  <line class="arr" x1="600" y1="110" x2="650" y2="110"/>
+
+  <!-- second row: rebuild loop -->
+  <rect class="stage" x="230" y="220" width="170" height="60" rx="8"/>
+  <text class="label" x="315" y="250">setState()</text>
+  <text class="desc" x="315" y="268">Меняем state — перерисовка</text>
+
+  <rect class="stage" x="430" y="220" width="170" height="60" rx="8"/>
+  <text class="label" x="515" y="250">didUpdateWidget()</text>
+  <text class="desc" x="515" y="268">Родитель пересоздал виджет</text>
+
+  <rect class="build" x="650" y="220" width="130" height="60" rx="8"/>
+  <text class="label" x="715" y="250">build()</text>
+  <text class="desc" x="715" y="268">Снова</text>
+
+  <path class="arr" d="M715,140 C715,180 600,180 315,180 L315,220"/>
+  <line class="arr" x1="400" y1="250" x2="430" y2="250"/>
+  <line class="arr" x1="600" y1="250" x2="650" y2="250"/>
+  <path class="arr" d="M715,280 C715,310 515,310 315,310 L315,335"/>
+
+  <!-- dispose -->
+  <rect class="dispose" x="350" y="370" width="200" height="60" rx="8"/>
+  <text class="label" x="450" y="400">deactivate() → dispose()</text>
+  <text class="desc" x="450" y="418">Отписываемся, освобождаем ресурсы</text>
+</svg>

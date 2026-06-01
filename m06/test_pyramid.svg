@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" font-family="-apple-system,Segoe UI,Roboto,sans-serif">
+  <style>
+    .label{font-size:15px;fill:#102a43;text-anchor:middle;font-weight:600}
+    .desc{font-size:12px;fill:#486581;text-anchor:middle}
+    .small{font-size:11px;fill:#486581}
+    .title{font-size:18px;font-weight:600;fill:#102a43;text-anchor:middle}
+  </style>
+  <text class="title" x="360" y="32">Пирамида тестирования Flutter</text>
+
+  <!-- Bottom: Unit (wide) -->
+  <polygon points="80,400 640,400 540,310 180,310" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+  <text class="label" x="360" y="360">Unit tests</text>
+  <text class="desc" x="360" y="380">Логика, мапперы, usecases — много, быстрые</text>
+
+  <!-- Middle: Widget -->
+  <polygon points="180,310 540,310 460,220 260,220" fill="#fff3e0" stroke="#ef6c00" stroke-width="2"/>
+  <text class="label" x="360" y="263">Widget tests</text>
+  <text class="desc" x="360" y="285">Отдельные виджеты, BLoC + UI — средне</text>
+
+  <!-- Top: Integration -->
+  <polygon points="260,220 460,220 410,130 310,130" fill="#ffebee" stroke="#c62828" stroke-width="2"/>
+  <text class="label" x="360" y="175">Integration</text>
+  <text class="desc" x="360" y="197">Сценарии целиком — мало, медленные</text>
+
+  <!-- Side labels -->
+  <text class="small" x="40" y="170">мало</text>
+  <text class="small" x="40" y="265">средне</text>
+  <text class="small" x="40" y="360">много</text>
+  <text class="small" x="40" y="450">штук</text>
+
+  <text class="small" x="660" y="170">медленные</text>
+  <text class="small" x="660" y="265">средние</text>
+  <text class="small" x="660" y="360">быстрые</text>
+
+  <text class="desc" x="360" y="455">flutter test для unit/widget — без эмулятора. integration_test — с эмулятором.</text>
+</svg>

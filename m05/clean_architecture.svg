@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" font-family="-apple-system,Segoe UI,Roboto,sans-serif">
+  <style>
+    .label{font-size:15px;fill:#102a43;text-anchor:middle;font-weight:600}
+    .desc{font-size:11px;fill:#486581;text-anchor:middle}
+    .title{font-size:18px;font-weight:600;fill:#102a43;text-anchor:middle}
+    .legend{font-size:12px;fill:#102a43}
+    .arr{stroke:#1976d2;stroke-width:2.5;fill:none;marker-end:url(#a)}
+  </style>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1976d2"/>
+    </marker>
+  </defs>
+  <text class="title" x="380" y="32">Clean Architecture: три слоя</text>
+
+  <!-- Outer: presentation -->
+  <circle cx="380" cy="280" r="200" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <text class="label" x="380" y="105">Presentation</text>
+  <text class="desc" x="380" y="122">UI, BLoC/Cubit, виджеты</text>
+
+  <!-- Middle: domain -->
+  <circle cx="380" cy="280" r="140" fill="#fff3e0" stroke="#ef6c00" stroke-width="2"/>
+  <text class="label" x="380" y="165">Domain</text>
+  <text class="desc" x="380" y="182">Entities, UseCases, Interfaces</text>
+
+  <!-- Inner: data -->
+  <circle cx="380" cy="280" r="80" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+  <text class="label" x="380" y="270">Data</text>
+  <text class="desc" x="380" y="288">API клиенты, БД</text>
+  <text class="desc" x="380" y="302">DTO, мапперы</text>
+
+  <!-- Dependency arrow -->
+  <text class="legend" x="60" y="455">Зависимости направлены ВНУТРЬ:</text>
+  <line class="arr" x1="200" y1="475" x2="280" y2="475"/>
+  <text class="desc" x="350" y="479">presentation → domain ← data</text>
+
+  <text class="legend" x="60" y="500">Domain ничего не знает о Flutter, БД, HTTP — только бизнес-правила</text>
+</svg>

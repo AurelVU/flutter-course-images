@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" font-family="-apple-system,Segoe UI,Roboto,sans-serif">
+  <style>
+    .screen{fill:#e3f2fd;stroke:#1565c0;stroke-width:2;rx:8;ry:8}
+    .top{fill:#fff3e0;stroke:#ef6c00;stroke-width:3;rx:8;ry:8}
+    .label{font-size:15px;fill:#102a43;text-anchor:middle;font-weight:600}
+    .desc{font-size:12px;fill:#486581;text-anchor:middle}
+    .arr{stroke:#455a64;stroke-width:2;fill:none;marker-end:url(#a)}
+    .title{font-size:18px;font-weight:600;fill:#102a43;text-anchor:middle}
+  </style>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#455a64"/>
+    </marker>
+  </defs>
+  <text class="title" x="380" y="28">Стек экранов Navigator</text>
+
+  <!-- Stack visual -->
+  <text class="label" x="180" y="76">Стек маршрутов</text>
+
+  <rect class="top" x="80" y="100" width="200" height="50"/>
+  <text class="label" x="180" y="130">/movie/123 (верх)</text>
+
+  <rect class="screen" x="80" y="170" width="200" height="50"/>
+  <text class="label" x="180" y="200">/movies</text>
+
+  <rect class="screen" x="80" y="240" width="200" height="50"/>
+  <text class="label" x="180" y="270">/home</text>
+
+  <text class="desc" x="180" y="320">Видим только верхний экран</text>
+  <text class="desc" x="180" y="338">push добавляет, pop убирает</text>
+
+  <!-- Right side: actions -->
+  <rect fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" x="380" y="100" width="320" height="60" rx="8"/>
+  <text class="label" x="540" y="128">Navigator.push(...)</text>
+  <text class="desc" x="540" y="148">Добавить экран на верх стека</text>
+
+  <rect fill="#ffebee" stroke="#c62828" stroke-width="2" x="380" y="180" width="320" height="60" rx="8"/>
+  <text class="label" x="540" y="208">Navigator.pop()</text>
+  <text class="desc" x="540" y="228">Снять верхний экран, вернуться</text>
+
+  <rect fill="#f3e5f5" stroke="#6a1b9a" stroke-width="2" x="380" y="260" width="320" height="60" rx="8"/>
+  <text class="label" x="540" y="288">Navigator.pushReplacement(...)</text>
+  <text class="desc" x="540" y="308">Заменить текущий верх</text>
+
+  <text class="desc" x="380" y="400">Жест «назад» на Android и iOS = pop()</text>
+</svg>

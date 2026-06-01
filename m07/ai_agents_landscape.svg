@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 460" font-family="-apple-system,Segoe UI,Roboto,sans-serif">
+  <style>
+    .box{stroke-width:2;rx:10;ry:10}
+    .label{font-size:16px;fill:#102a43;text-anchor:middle;font-weight:600}
+    .role{font-size:12px;fill:#102a43;text-anchor:middle;font-weight:600}
+    .desc{font-size:11px;fill:#486581;text-anchor:middle}
+    .title{font-size:18px;font-weight:600;fill:#102a43;text-anchor:middle}
+  </style>
+  <text class="title" x="410" y="32">AI-агенты для Flutter в 2026</text>
+
+  <rect class="box" x="40" y="80" width="220" height="160" fill="#fff3e0" stroke="#ef6c00"/>
+  <text class="label" x="150" y="110">Claude Code</text>
+  <text class="role" x="150" y="135">CLI-агент</text>
+  <text class="desc" x="150" y="160">Терминал, читает файлы</text>
+  <text class="desc" x="150" y="178">правит код, запускает тесты</text>
+  <text class="desc" x="150" y="196">MCP-расширения</text>
+  <text class="desc" x="150" y="220">от Anthropic</text>
+
+  <rect class="box" x="290" y="80" width="220" height="160" fill="#e3f2fd" stroke="#1565c0"/>
+  <text class="label" x="400" y="110">Cursor</text>
+  <text class="role" x="400" y="135">IDE-агент (форк VS Code)</text>
+  <text class="desc" x="400" y="160">Composer для многофайловых</text>
+  <text class="desc" x="400" y="178">правок, Tab-автокомплит</text>
+  <text class="desc" x="400" y="196">Chat с контекстом проекта</text>
+  <text class="desc" x="400" y="220">от Anysphere</text>
+
+  <rect class="box" x="540" y="80" width="220" height="160" fill="#e8f5e9" stroke="#2e7d32"/>
+  <text class="label" x="650" y="110">Codex / Aider</text>
+  <text class="role" x="650" y="135">CLI / IDE-плагин</text>
+  <text class="desc" x="650" y="160">Codex — OpenAI облако,</text>
+  <text class="desc" x="650" y="178">Aider — open-source git-агент</text>
+  <text class="desc" x="650" y="196">оба правят файлы коммитами</text>
+  <text class="desc" x="650" y="220">от OpenAI / комьюнити</text>
+
+  <rect class="box" x="170" y="290" width="220" height="130" fill="#f3e5f5" stroke="#6a1b9a"/>
+  <text class="label" x="280" y="320">GitHub Copilot</text>
+  <text class="role" x="280" y="345">IDE-плагин</text>
+  <text class="desc" x="280" y="370">Автокомплит, Chat,</text>
+  <text class="desc" x="280" y="388">workspace-агент</text>
+  <text class="desc" x="280" y="406">от GitHub / Microsoft</text>
+
+  <rect class="box" x="420" y="290" width="220" height="130" fill="#fffde7" stroke="#f9a825"/>
+  <text class="label" x="530" y="320">Gemini Code Assist</text>
+  <text class="role" x="530" y="345">IDE-плагин</text>
+  <text class="desc" x="530" y="370">Чат, autocomplete</text>
+  <text class="desc" x="530" y="388">в Android Studio</text>
+  <text class="desc" x="530" y="406">от Google</text>
+</svg>

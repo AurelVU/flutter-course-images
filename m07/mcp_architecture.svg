@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 380" font-family="-apple-system,Segoe UI,Roboto,sans-serif">
+  <style>
+    .agent{fill:#fff3e0;stroke:#ef6c00;stroke-width:2;rx:8;ry:8}
+    .proto{fill:#fffde7;stroke:#f9a825;stroke-width:2;rx:8;ry:8}
+    .srv{fill:#e3f2fd;stroke:#1565c0;stroke-width:2;rx:8;ry:8}
+    .ext{fill:#e8f5e9;stroke:#2e7d32;stroke-width:2;rx:8;ry:8}
+    .label{font-size:14px;fill:#102a43;text-anchor:middle;font-weight:600}
+    .desc{font-size:11px;fill:#486581;text-anchor:middle}
+    .arr{stroke:#455a64;stroke-width:2;fill:none;marker-end:url(#a)}
+    .title{font-size:18px;font-weight:600;fill:#102a43;text-anchor:middle}
+  </style>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#455a64"/>
+    </marker>
+  </defs>
+  <text class="title" x="430" y="32">MCP: как агент управляет инструментами</text>
+
+  <rect class="agent" x="40" y="90" width="180" height="100"/>
+  <text class="label" x="130" y="118">AI-агент</text>
+  <text class="desc" x="130" y="138">Claude Code / Cursor</text>
+  <text class="desc" x="130" y="154">умеет вызывать tools</text>
+  <text class="desc" x="130" y="170">через JSON-RPC</text>
+
+  <rect class="proto" x="260" y="115" width="140" height="50"/>
+  <text class="label" x="330" y="140">MCP protocol</text>
+  <text class="desc" x="330" y="156">stdio / sse</text>
+
+  <rect class="srv" x="440" y="90" width="200" height="100"/>
+  <text class="label" x="540" y="118">Dart MCP server</text>
+  <text class="desc" x="540" y="138">flutter_driver</text>
+  <text class="desc" x="540" y="154">dart_format, pub_search</text>
+  <text class="desc" x="540" y="170">hot_reload, run_tests</text>
+
+  <rect class="ext" x="680" y="90" width="160" height="100"/>
+  <text class="label" x="760" y="118">Flutter SDK</text>
+  <text class="desc" x="760" y="138">flutter CLI</text>
+  <text class="desc" x="760" y="154">dart analyzer</text>
+  <text class="desc" x="760" y="170">DevTools</text>
+
+  <line class="arr" x1="220" y1="140" x2="260" y2="140"/>
+  <line class="arr" x1="400" y1="140" x2="440" y2="140"/>
+  <line class="arr" x1="640" y1="140" x2="680" y2="140"/>
+
+  <text class="desc" x="430" y="245">Агент НЕ знает про Flutter напрямую</text>
+  <text class="desc" x="430" y="263">MCP server описывает доступные tools — агент выбирает и вызывает</text>
+  <text class="desc" x="430" y="281">Результат возвращается обратно как JSON</text>
+
+  <rect class="agent" x="280" y="305" width="300" height="40"/>
+  <text class="label" x="430" y="330">«Запусти тесты и почини красные»</text>
+</svg>

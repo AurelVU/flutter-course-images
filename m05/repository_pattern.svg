@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 360" font-family="-apple-system,Segoe UI,Roboto,sans-serif">
+  <style>
+    .pres{fill:#e3f2fd;stroke:#1565c0;stroke-width:2;rx:8;ry:8}
+    .dom{fill:#fff3e0;stroke:#ef6c00;stroke-width:2;rx:8;ry:8}
+    .data{fill:#e8f5e9;stroke:#2e7d32;stroke-width:2;rx:8;ry:8}
+    .iface{fill:#fffde7;stroke:#f9a825;stroke-width:2;stroke-dasharray:6 4;rx:8;ry:8}
+    .label{font-size:14px;fill:#102a43;text-anchor:middle;font-weight:600}
+    .desc{font-size:11px;fill:#486581;text-anchor:middle}
+    .arr{stroke:#455a64;stroke-width:2;fill:none;marker-end:url(#a)}
+    .arr-imp{stroke:#1976d2;stroke-width:2;fill:none;marker-end:url(#b);stroke-dasharray:6 4}
+    .title{font-size:18px;font-weight:600;fill:#102a43;text-anchor:middle}
+    .layer{font-size:13px;font-weight:600;text-anchor:middle}
+  </style>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#455a64"/>
+    </marker>
+    <marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1976d2"/>
+    </marker>
+  </defs>
+  <text class="title" x="430" y="28">Repository pattern: интерфейс делит слои</text>
+
+  <!-- Layer headers -->
+  <text class="layer" x="120" y="80" fill="#1565c0">Presentation</text>
+  <text class="layer" x="430" y="80" fill="#ef6c00">Domain</text>
+  <text class="layer" x="740" y="80" fill="#2e7d32">Data</text>
+
+  <rect class="pres" x="40" y="120" width="160" height="80"/>
+  <text class="label" x="120" y="150">MoviesBloc</text>
+  <text class="desc" x="120" y="170">вызывает</text>
+  <text class="desc" x="120" y="186">GetPopularMovies()</text>
+
+  <rect class="dom" x="280" y="120" width="160" height="80"/>
+  <text class="label" x="360" y="150">UseCase</text>
+  <text class="desc" x="360" y="170">GetPopularMovies</text>
+  <text class="desc" x="360" y="186">зовёт repository</text>
+
+  <rect class="iface" x="460" y="120" width="180" height="80"/>
+  <text class="label" x="550" y="150">abstract</text>
+  <text class="label" x="550" y="170">MoviesRepository</text>
+  <text class="desc" x="550" y="188">интерфейс в domain</text>
+
+  <rect class="data" x="680" y="120" width="160" height="80"/>
+  <text class="label" x="760" y="150">MoviesRepoImpl</text>
+  <text class="desc" x="760" y="170">TMDBApi + Hive</text>
+  <text class="desc" x="760" y="186">реализация</text>
+
+  <line class="arr" x1="200" y1="160" x2="280" y2="160"/>
+  <line class="arr" x1="440" y1="160" x2="460" y2="160"/>
+  <line class="arr-imp" x1="680" y1="160" x2="640" y2="160"/>
+
+  <text class="desc" x="430" y="250">Domain объявляет ЧТО умеет repository, data реализует КАК</text>
+  <text class="desc" x="430" y="270">Поменять API на mock или БД — правим только data, domain не трогаем</text>
+  <text class="desc" x="430" y="295" fill="#1976d2">пунктирная стрелка: implements (зависимость направлена внутрь)</text>
+</svg>

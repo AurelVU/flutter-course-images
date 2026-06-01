@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 540" font-family="-apple-system,'SF Mono',Menlo,Consolas,monospace">
+  <style>
+    .dir{font-size:14px;fill:#1565c0;font-weight:600}
+    .file{font-size:13px;fill:#102a43}
+    .com{font-size:12px;fill:#486581}
+    .title{font-size:18px;font-weight:600;fill:#102a43;text-anchor:middle;font-family:-apple-system,sans-serif}
+    .panel{fill:#f5f7fa;stroke:#cbd5e0;stroke-width:1;rx:8;ry:8}
+  </style>
+  <text class="title" x="380" y="30">Структура Flutter-проекта</text>
+
+  <rect class="panel" x="40" y="60" width="680" height="460"/>
+
+  <text class="dir" x="60" y="90">my_app/</text>
+
+  <text class="dir" x="80" y="118">├── lib/</text>
+  <text class="com" x="280" y="118">— весь твой Dart-код</text>
+  <text class="file" x="100" y="142">│   └── main.dart</text>
+  <text class="com" x="280" y="142">— точка входа: void main() => runApp(...)</text>
+
+  <text class="dir" x="80" y="170">├── test/</text>
+  <text class="com" x="280" y="170">— unit и widget тесты (flutter test)</text>
+
+  <text class="file" x="80" y="198">├── pubspec.yaml</text>
+  <text class="com" x="280" y="198">— зависимости, ассеты, имя пакета</text>
+
+  <text class="file" x="80" y="222">├── pubspec.lock</text>
+  <text class="com" x="280" y="222">— залоченные версии, коммитим</text>
+
+  <text class="file" x="80" y="246">├── analysis_options.yaml</text>
+  <text class="com" x="280" y="246">— правила линтера</text>
+
+  <text class="dir" x="80" y="274">├── android/</text>
+  <text class="com" x="280" y="274">— нативный Android-проект (Gradle)</text>
+
+  <text class="dir" x="80" y="298">├── ios/</text>
+  <text class="com" x="280" y="298">— нативный iOS-проект (Xcode)</text>
+
+  <text class="dir" x="80" y="322">├── web/</text>
+  <text class="com" x="280" y="322">— шаблоны для Flutter Web</text>
+
+  <text class="dir" x="80" y="346">├── macos/  linux/  windows/</text>
+  <text class="com" x="380" y="346">— десктопные платформы</text>
+
+  <text class="dir" x="80" y="374">├── build/</text>
+  <text class="com" x="280" y="374">— артефакты сборки, в .gitignore</text>
+
+  <text class="dir" x="80" y="398">├── .dart_tool/</text>
+  <text class="com" x="280" y="398">— кеш pub, в .gitignore</text>
+
+  <text class="file" x="80" y="422">└── README.md</text>
+
+  <text class="com" x="60" y="480" font-family="-apple-system,sans-serif">Главные файлы для повседневной работы: lib/ и pubspec.yaml.</text>
+  <text class="com" x="60" y="500" font-family="-apple-system,sans-serif">Папки android/ и ios/ трогаем редко — только для нативных настроек.</text>
+</svg>
