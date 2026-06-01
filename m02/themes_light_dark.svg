@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" font-family="-apple-system,Segoe UI,Roboto,sans-serif">
+  <style>
+    .title{font-size:18px;font-weight:600;text-anchor:middle;fill:#102a43}
+    .small{font-size:12px;fill:#486581;text-anchor:middle}
+    .swatch-l{stroke:#102a43;stroke-width:1.5}
+    .swatch-d{stroke:#fff;stroke-width:1.5}
+    .platform{font-size:16px;font-weight:600;text-anchor:middle}
+    .code{font-size:11px;fill:#102a43;font-family:'SF Mono',Menlo,monospace;text-anchor:middle}
+  </style>
+  <text class="title" x="410" y="30">ColorScheme.fromSeed: одна seed-палитра → светлая и тёмная</text>
+
+  <!-- Seed color -->
+  <text class="platform" x="410" y="65" fill="#102a43">Seed color: indigo</text>
+  <circle cx="410" cy="100" r="22" fill="#3f51b5" stroke="#102a43" stroke-width="2"/>
+
+  <!-- Light theme -->
+  <text class="platform" x="200" y="170" fill="#102a43">Brightness.light</text>
+  <rect x="80" y="185" width="240" height="220" fill="#fff" stroke="#102a43" stroke-width="1.5" rx="8"/>
+
+  <rect class="swatch-l" x="100" y="200" width="80" height="40" fill="#3f51b5"/>
+  <text x="195" y="225" font-size="12" fill="#102a43">primary</text>
+
+  <rect class="swatch-l" x="100" y="250" width="80" height="40" fill="#e8eaf6"/>
+  <text x="195" y="275" font-size="12" fill="#102a43">primaryContainer</text>
+
+  <rect class="swatch-l" x="100" y="300" width="80" height="40" fill="#fff"/>
+  <text x="195" y="325" font-size="12" fill="#102a43">surface</text>
+
+  <rect class="swatch-l" x="100" y="350" width="80" height="40" fill="#1a1a1c"/>
+  <text x="195" y="375" font-size="12" fill="#102a43">onSurface</text>
+
+  <!-- Dark theme -->
+  <text class="platform" x="620" y="170" fill="#102a43">Brightness.dark</text>
+  <rect x="500" y="185" width="240" height="220" fill="#0f0f10" stroke="#fff" stroke-width="1.5" rx="8"/>
+
+  <rect class="swatch-d" x="520" y="200" width="80" height="40" fill="#bdc1ff"/>
+  <text x="615" y="225" font-size="12" fill="#e0e0e0">primary</text>
+
+  <rect class="swatch-d" x="520" y="250" width="80" height="40" fill="#3a3f7f"/>
+  <text x="615" y="275" font-size="12" fill="#e0e0e0">primaryContainer</text>
+
+  <rect class="swatch-d" x="520" y="300" width="80" height="40" fill="#1f1f23"/>
+  <text x="615" y="325" font-size="12" fill="#e0e0e0">surface</text>
+
+  <rect class="swatch-d" x="520" y="350" width="80" height="40" fill="#e8e8eb"/>
+  <text x="615" y="375" font-size="12" fill="#e0e0e0">onSurface</text>
+
+  <text class="code" x="410" y="425">ColorScheme.fromSeed(seedColor: Colors.indigo, brightness: ...)</text>
+</svg>

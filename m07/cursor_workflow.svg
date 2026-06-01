@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" font-family="-apple-system,Segoe UI,Roboto,sans-serif">
+  <style>
+    .ide{fill:#1e1e1e;stroke:#3a3a3a;stroke-width:2;rx:8;ry:8}
+    .panel{fill:#252526;stroke:#3a3a3a;stroke-width:1}
+    .accent{fill:#0078d4}
+    .label{font-size:13px;fill:#fff;font-weight:600}
+    .desc{font-size:11px;fill:#bbb}
+    .code{font-size:11px;fill:#d4d4d4;font-family:'SF Mono',Menlo,monospace}
+    .green{fill:#4ec9b0}
+    .blue{fill:#9cdcfe}
+    .title{font-size:18px;font-weight:600;text-anchor:middle;fill:#102a43}
+    .small{font-size:11px;fill:#486581;text-anchor:middle}
+  </style>
+  <text class="title" x="410" y="30">Cursor: Tab автокомплит, Chat, Composer</text>
+
+  <!-- IDE mockup -->
+  <rect class="ide" x="60" y="60" width="700" height="320"/>
+
+  <!-- Sidebar -->
+  <rect class="panel" x="60" y="60" width="160" height="320"/>
+  <text class="label" x="75" y="85">EXPLORER</text>
+  <text class="desc" x="80" y="110">▾ lib/</text>
+  <text class="desc" x="92" y="128">main.dart</text>
+  <text class="desc" x="92" y="145">▾ features/</text>
+  <text class="desc" x="105" y="162">▾ movies/</text>
+  <text class="desc" x="118" y="179">bloc.dart</text>
+  <text class="desc" x="118" y="196">screen.dart</text>
+
+  <!-- Editor -->
+  <rect class="panel" x="225" y="60" width="335" height="200"/>
+  <text class="label" x="240" y="85">screen.dart</text>
+  <text class="code" x="240" y="110">class MoviesScreen extends StatelessWidget {</text>
+  <text class="code" x="240" y="128">  @override</text>
+  <text class="code" x="240" y="146">  Widget build(BuildContext context) {</text>
+  <text class="code" x="240" y="164">    return Scaffold(</text>
+  <text class="code" x="240" y="182">      appBar: AppBar(title: const Text('Films')),</text>
+  <!-- Tab suggestion -->
+  <rect x="280" y="195" width="240" height="40" fill="#264f78" stroke="#0078d4"/>
+  <text font-size="11" fill="#fff" x="288" y="210">    body: BlocBuilder&lt;MoviesBloc,MoviesState&gt;(</text>
+  <text font-size="10" fill="#9cdcfe" x="288" y="226">    Tab — принять предложение</text>
+
+  <!-- Chat panel right -->
+  <rect class="panel" x="565" y="60" width="195" height="320"/>
+  <text class="label" x="580" y="85">CHAT / COMPOSER</text>
+  <text class="desc" x="580" y="108">You: Добавь BLoC для</text>
+  <text class="desc" x="580" y="124">списка избранных</text>
+  <rect x="580" y="135" width="170" height="2" fill="#3a3a3a"/>
+  <text class="desc" x="580" y="152">Cursor:</text>
+  <text class="desc" x="580" y="168">Сделал 3 файла:</text>
+  <text class="green" x="580" y="184" font-size="11">+ favorites_bloc.dart</text>
+  <text class="green" x="580" y="200" font-size="11">+ favorites_event.dart</text>
+  <text class="green" x="580" y="216" font-size="11">+ favorites_state.dart</text>
+  <text class="desc" x="580" y="240">Применить?</text>
+  <rect class="accent" x="580" y="250" width="80" height="24" rx="4"/>
+  <text font-size="11" fill="#fff" x="620" y="266" text-anchor="middle">Accept All</text>
+
+  <!-- Terminal -->
+  <rect class="panel" x="225" y="265" width="335" height="115"/>
+  <text class="label" x="240" y="290">TERMINAL</text>
+  <text class="code" x="240" y="310">$ flutter test</text>
+  <text class="green" x="240" y="328" font-size="11">All tests passed!</text>
+  <text class="code" x="240" y="346">$ _</text>
+
+  <text class="small" x="410" y="405">Composer редактирует несколько файлов; Tab принимает одиночные подсказки</text>
+</svg>

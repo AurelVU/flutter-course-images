@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 460" font-family="-apple-system,Segoe UI,Roboto,sans-serif">
+  <style>
+    .phone{fill:#fff;stroke:#102a43;stroke-width:2;rx:18;ry:18}
+    .field{fill:#fff;stroke:#bdbdbd;stroke-width:1.5;rx:4;ry:4}
+    .field-ok{fill:#fff;stroke:#2e7d32;stroke-width:2;rx:4;ry:4}
+    .field-err{fill:#fff;stroke:#c62828;stroke-width:2;rx:4;ry:4}
+    .label{font-size:11px;fill:#486581}
+    .label-ok{font-size:11px;fill:#2e7d32}
+    .label-err{font-size:11px;fill:#c62828}
+    .text{font-size:13px;fill:#102a43}
+    .title{font-size:18px;font-weight:600;text-anchor:middle;fill:#102a43}
+    .small{font-size:11px;fill:#486581;text-anchor:middle}
+    .platform{font-size:14px;font-weight:600;text-anchor:middle}
+    .btn{fill:#1976d2;rx:4;ry:4}
+    .btnw{fill:#fff;font-size:14px;font-weight:600;text-anchor:middle}
+  </style>
+  <text class="title" x="410" y="30">TextFormField: валидные и невалидные состояния</text>
+
+  <!-- Valid form -->
+  <text class="platform" x="200" y="65" fill="#2e7d32">Валидная форма</text>
+  <rect class="phone" x="80" y="80" width="240" height="350"/>
+
+  <text class="label-ok" x="100" y="120">Email</text>
+  <rect class="field-ok" x="100" y="125" width="200" height="38"/>
+  <text class="text" x="115" y="148">john@flutter.dev</text>
+
+  <text class="label-ok" x="100" y="190">Пароль</text>
+  <rect class="field-ok" x="100" y="195" width="200" height="38"/>
+  <text class="text" x="115" y="218">••••••••</text>
+
+  <text class="label-ok" x="100" y="260">Город</text>
+  <rect class="field-ok" x="100" y="265" width="200" height="38"/>
+  <text class="text" x="115" y="288">Москва</text>
+
+  <rect class="btn" x="100" y="340" width="200" height="42"/>
+  <text class="btnw" x="200" y="366">Отправить</text>
+
+  <!-- Invalid form -->
+  <text class="platform" x="620" y="65" fill="#c62828">С ошибками валидации</text>
+  <rect class="phone" x="500" y="80" width="240" height="350"/>
+
+  <text class="label-err" x="520" y="120">Email</text>
+  <rect class="field-err" x="520" y="125" width="200" height="38"/>
+  <text class="text" x="535" y="148" fill="#c62828">notanemail</text>
+  <text class="label-err" x="520" y="178">Введите корректный email</text>
+
+  <text class="label-err" x="520" y="200">Пароль</text>
+  <rect class="field-err" x="520" y="205" width="200" height="38"/>
+  <text class="text" x="535" y="228" fill="#c62828">123</text>
+  <text class="label-err" x="520" y="258">Минимум 8 символов</text>
+
+  <text class="label" x="520" y="280">Город</text>
+  <rect class="field" x="520" y="285" width="200" height="38"/>
+  <text class="text" x="535" y="308" fill="#aaa">Опционально</text>
+
+  <rect class="btn" x="520" y="340" width="200" height="42" opacity="0.4"/>
+  <text class="btnw" x="620" y="366" opacity="0.6">Отправить</text>
+
+  <text class="small" x="410" y="450">validator возвращает null для OK или текст ошибки для красного состояния</text>
+</svg>

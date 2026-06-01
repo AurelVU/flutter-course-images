@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 460" font-family="-apple-system,Segoe UI,Roboto,sans-serif">
+  <style>
+    .phone{fill:#fff;stroke:#102a43;stroke-width:2;rx:18;ry:18}
+    .row{fill:#e3f2fd;stroke:#1565c0;stroke-width:1}
+    .cell{fill:#fff3e0;stroke:#ef6c00;stroke-width:1}
+    .platform{font-size:16px;font-weight:600;text-anchor:middle;fill:#102a43}
+    .title{font-size:18px;font-weight:600;text-anchor:middle;fill:#102a43}
+    .small{font-size:11px;fill:#486581;text-anchor:middle}
+    .code{font-size:11px;fill:#102a43;font-family:'SF Mono',Menlo,monospace;text-anchor:middle}
+  </style>
+  <text class="title" x="410" y="30">ListView vs GridView</text>
+
+  <!-- ListView -->
+  <text class="platform" x="200" y="65" fill="#1565c0">ListView.builder</text>
+  <rect class="phone" x="80" y="80" width="240" height="320"/>
+  <rect class="row" x="100" y="100" width="200" height="40" rx="4"/>
+  <rect class="row" x="100" y="150" width="200" height="40" rx="4"/>
+  <rect class="row" x="100" y="200" width="200" height="40" rx="4"/>
+  <rect class="row" x="100" y="250" width="200" height="40" rx="4"/>
+  <rect class="row" x="100" y="300" width="200" height="40" rx="4"/>
+  <rect class="row" x="100" y="350" width="200" height="40" rx="4"/>
+  <text class="small" x="200" y="123">Item 1</text>
+  <text class="small" x="200" y="173">Item 2</text>
+  <text class="small" x="200" y="223">Item 3</text>
+  <text class="small" x="200" y="273">Item 4</text>
+  <text class="small" x="200" y="323">Item 5</text>
+  <text class="small" x="200" y="373">Item 6</text>
+
+  <!-- GridView -->
+  <text class="platform" x="620" y="65" fill="#ef6c00">GridView.builder</text>
+  <rect class="phone" x="500" y="80" width="240" height="320"/>
+  <rect class="cell" x="520" y="100" width="60" height="80" rx="4"/>
+  <rect class="cell" x="590" y="100" width="60" height="80" rx="4"/>
+  <rect class="cell" x="660" y="100" width="60" height="80" rx="4"/>
+  <rect class="cell" x="520" y="190" width="60" height="80" rx="4"/>
+  <rect class="cell" x="590" y="190" width="60" height="80" rx="4"/>
+  <rect class="cell" x="660" y="190" width="60" height="80" rx="4"/>
+  <rect class="cell" x="520" y="280" width="60" height="80" rx="4"/>
+  <rect class="cell" x="590" y="280" width="60" height="80" rx="4"/>
+  <rect class="cell" x="660" y="280" width="60" height="80" rx="4"/>
+
+  <text class="small" x="200" y="425">Линейный список, итемы один под другим</text>
+  <text class="small" x="620" y="425">Сетка, crossAxisCount задаёт колонки</text>
+</svg>

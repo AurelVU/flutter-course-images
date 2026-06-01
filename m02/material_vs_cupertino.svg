@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 460" font-family="-apple-system,Segoe UI,Roboto,sans-serif">
+  <style>
+    .phone{fill:#fff;stroke:#102a43;stroke-width:2;rx:24;ry:24}
+    .appbar-m{fill:#1976d2}
+    .appbar-c{fill:#f2f2f7;stroke:#c7c7cc}
+    .btn-m{fill:#1976d2;rx:4;ry:4}
+    .btn-c{fill:#0a84ff;rx:8;ry:8}
+    .row-m{fill:#f5f5f5;stroke:#e0e0e0}
+    .row-c{fill:#fff;stroke:#c7c7cc}
+    .label{font-size:14px;fill:#102a43;text-anchor:middle;font-weight:600}
+    .platform{font-size:18px;font-weight:600;text-anchor:middle;fill:#102a43}
+    .title{font-size:18px;font-weight:600;text-anchor:middle;fill:#102a43}
+    .small{font-size:11px;fill:#486581;text-anchor:middle}
+    .white{fill:#fff;font-size:13px;font-weight:600;text-anchor:middle}
+    .black{fill:#102a43;font-size:13px;font-weight:600;text-anchor:middle}
+    .ios-btn-text{fill:#fff;font-size:14px;text-anchor:middle;font-weight:500}
+  </style>
+  <text class="title" x="410" y="30">Material (Android) vs Cupertino (iOS)</text>
+
+  <!-- Material phone -->
+  <text class="platform" x="200" y="68" fill="#1976d2">Material</text>
+  <rect class="phone" x="80" y="80" width="240" height="350"/>
+  <!-- AppBar -->
+  <rect class="appbar-m" x="80" y="80" width="240" height="56" rx="24" ry="24"/>
+  <rect class="appbar-m" x="80" y="115" width="240" height="21"/>
+  <text class="white" x="200" y="113">Films</text>
+  <!-- list rows -->
+  <rect class="row-m" x="90" y="155" width="220" height="50"/>
+  <text class="black" x="200" y="184">ListTile</text>
+  <rect class="row-m" x="90" y="215" width="220" height="50"/>
+  <text class="black" x="200" y="244">ListTile</text>
+  <!-- ElevatedButton -->
+  <rect class="btn-m" x="130" y="290" width="140" height="42"/>
+  <text class="white" x="200" y="316">ElevatedButton</text>
+  <!-- FAB -->
+  <circle cx="280" cy="380" r="22" fill="#1976d2"/>
+  <text class="white" x="280" y="385">+</text>
+
+  <!-- Cupertino phone -->
+  <text class="platform" x="620" y="68" fill="#0a84ff">Cupertino</text>
+  <rect class="phone" x="500" y="80" width="240" height="350"/>
+  <!-- Nav bar -->
+  <rect class="appbar-c" x="500" y="80" width="240" height="56" rx="24" ry="24"/>
+  <rect class="appbar-c" x="500" y="115" width="240" height="21"/>
+  <text class="black" x="620" y="113">Films</text>
+  <!-- list rows -->
+  <rect class="row-c" x="510" y="155" width="220" height="50"/>
+  <text class="black" x="620" y="184">CupertinoListTile</text>
+  <line x1="510" y1="205" x2="730" y2="205" stroke="#c7c7cc"/>
+  <rect class="row-c" x="510" y="215" width="220" height="50"/>
+  <text class="black" x="620" y="244">CupertinoListTile</text>
+  <!-- CupertinoButton.filled -->
+  <rect class="btn-c" x="540" y="290" width="160" height="40"/>
+  <text class="ios-btn-text" x="620" y="316">CupertinoButton</text>
+  <!-- Tab bar at bottom -->
+  <rect x="500" y="395" width="240" height="35" fill="#f2f2f7" stroke="#c7c7cc"/>
+  <circle cx="540" cy="412" r="6" fill="#0a84ff"/>
+  <circle cx="620" cy="412" r="6" fill="#8e8e93"/>
+  <circle cx="700" cy="412" r="6" fill="#8e8e93"/>
+
+  <text class="small" x="410" y="450">Один и тот же экран Flutter — в двух дизайн-системах</text>
+</svg>
